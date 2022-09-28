@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "44f9c6a0-d333-49f2-893e-69768baf7b24": {
+      "ProjectGuid": "44f9c6a0-d333-49f2-893e-69768baf7b24",
+      "DisplayName": "계산기",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

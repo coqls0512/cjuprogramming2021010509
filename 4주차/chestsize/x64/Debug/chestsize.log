@@ -1,0 +1,3 @@
+﻿  chestsize.cpp
+C:\Users\User\Documents\GitHub\cjuprogramming2021010509\4주차\chestsize\chestsize.cpp(10,7): warning C4101: 'chchestsize' :참조되지 않은 지역 변수입니다.
+  chestsize.vcxproj -> C:\Users\User\Documents\GitHub\cjuprogramming2021010509\4주차\chestsize\x64\Debug\chestsize.exe
