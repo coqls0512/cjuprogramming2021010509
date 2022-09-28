@@ -1,0 +1,5 @@
+﻿빌드 시작...
+1>------ 빌드 시작: 프로젝트: 계산기, 구성: Debug x64 ------
+1>소스.cpp
+1>계산기.vcxproj -> C:\Users\User\Documents\GitHub\cjuprogramming2021010509\4주차\계산기\x64\Debug\계산기.exe
+========== 빌드: 성공 1, 실패 0, 최신 0, 생략 0 ==========

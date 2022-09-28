@@ -8,15 +8,28 @@ int main(void)
 	printf("Input your arithmetic operation:\n");
 	scanf_s("%d %c %d", &num1, &op, 1, &num2);
 
-	switch (op)
+
+	if (op == '+')
 	{
-	case '+':res = num1 + num2; break;
-	case '-':res = num1 - num2; break;
-	case '*':res = num1 * num2; break;
-	case '/':res = num1 / num2; break;
+		res =num1 + num2;
+	}
+	else if (op == '-')
+	{
+		res =num1 - num2;
+	}
+	else if (op == '*')
+	{
+		res=num1 * num2;
+	}
+	else if (op == '/')
+	{
+		res=num1/num2;
 	}
 
-	printf(" % d % c % d = % d \n", num1, op, num2, res);
+
+
+	printf(" %d%c%d = %d \n", num1, op, num2,res);
 	return 0;
 
 }
+
