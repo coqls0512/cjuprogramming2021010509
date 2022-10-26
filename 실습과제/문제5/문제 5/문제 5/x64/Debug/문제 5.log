@@ -1,2 +1,4 @@
 ﻿  소스.cpp
+C:\Users\수진\Documents\GitHub\cjuprogramming2021010509\실습과제\문제5\문제 5\문제 5\소스.cpp(27,8): warning C4102: 'retry1': 참조되지 않은 레이블입니다.
+C:\Users\수진\Documents\GitHub\cjuprogramming2021010509\실습과제\문제5\문제 5\문제 5\소스.cpp(48,8): warning C4102: 'retry2': 참조되지 않은 레이블입니다.
   문제 5.vcxproj -> C:\Users\수진\Documents\GitHub\cjuprogramming2021010509\실습과제\문제5\문제 5\x64\Debug\문제 5.exe
