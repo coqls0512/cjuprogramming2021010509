@@ -1,0 +1,90 @@
+int red = 11;
+int blue = 10;
+int green = 9;
+int RedledPin = 4;
+int buzzerPin = 7; // 부저 핀 설정
+int flamePin = A0; // 불꽃 감지 센서 핀 설정
+
+void setup() 
+{
+  Serial.begin(9600); // 시리얼모니터 사용
+
+  pinMode(11, OUTPUT); // 11번 핀 출력모드로 설정
+  pinMode(10, OUTPUT); //10번 핀 출력모드로 설정
+  pinMode(9, OUTPUT); // 9번 핀 출력모드로 설정
+  pinMode(4, OUTPUT); // 4번 핀 출력모드로 설정
+  pinMode(7, OUTPUT); // 7번 핀 출력모드로 설정
+}
+
+void loop() 
+{
+  int flameValue = analogRead(flamePin); // 불꽃 감지 센서 값 flameValue 변수에 저장
+   
+  Serial.println(flameValue);
+    analogWrite(11, 255); // RGB LED 하얀색으로 켜짐
+    analogWrite(10, 255);
+    analogWrite(9, 255);
+
+    
+     
+    
+  if(flameValue > 1000) // 불꽃 감지 센서 값이 기준값보다 크면
+  { 
+    
+  digitalWrite(7,HIGH);
+  delay(10);
+  digitalWrite(7,LOW);
+    
+     for(int i=0; i<=255;i++)
+    {
+    analogWrite(11, i); // RBG LED 빨간색 켜짐
+    analogWrite(10, 0);
+    analogWrite(9,0);
+   delay(5);
+    }
+    digitalWrite(7,HIGH);
+  delay(10);
+  digitalWrite(7,LOW);
+  
+    for(int i=255;i>=0;i--)
+    {
+      analogWrite(11,i);
+      analogWrite(10, 0);
+    analogWrite(9,0);
+      delay(5);
+    }
+    digitalWrite(7,HIGH);
+  delay(10);
+  digitalWrite(7,LOW);
+   
+    
+     for(int i=0; i<=255;i++)
+
+     {
+      analogWrite(11, i);
+      analogWrite(10, i);
+      analogWrite(9, i);
+      delay(5);
+     }
+     digitalWrite(7,HIGH);
+  delay(10);
+  digitalWrite(7,LOW);
+      for(int i=255;i>=0;i--)
+    {
+      analogWrite(11,i);
+      analogWrite(10, i);
+      analogWrite(9, i);
+      delay(10);
+    }
+    digitalWrite(7,HIGH);
+  delay(10);
+  digitalWrite(7,LOW);
+ 
+    
+  }
+  else
+  {
+    digitalWrite(7, LOW); // 부저 꺼짐
+  }
+  delay(10);
+}
